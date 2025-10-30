@@ -60,7 +60,7 @@ export default function App() {
 
 
   return (
-    <div className="bg-[#d6d6d6] p-4 min-h-screen">
+    <div className="bg-[#d6d6d6] p-4 min-h-screen overflow-hidden ">
       {/* notes app goes here */}
       <div className="">
         {/* search notes  */}
@@ -74,7 +74,7 @@ export default function App() {
           />
         </div>
 
-        <div className="bg-[#f0f0f0] p-4 rounded-xl mt-10 max-w-2xl mx-auto">
+        <div className="bg-[#f0f0f0] p-4 rounded-xl mt-4 max-w-2xl mx-auto">
           {/* fields */}
           <div className="flex flex-col gap-4">
             <form onSubmit={addNotes}>
@@ -110,8 +110,8 @@ export default function App() {
           </div>
 
           {/* My Notes */}
-          <div className="mt-4">
-            <h1 className="text-3xl font-semibold">My Notes</h1>
+            <h1 className="text-3xl font-semibold mt-4">My Notes</h1>
+          <div className="mt-4 h-106.5 overflow-y-auto">
 
             {/* Notes list */}
             {filteredNotes.length === 0 ? (
