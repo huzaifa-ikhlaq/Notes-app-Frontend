@@ -7,7 +7,7 @@ export default function App() {
   const [tags, setTags] = useState("");
   const [editingNoteId, setEditingNoteId] = useState(null);
 
-  const API_URL = import.meta.env.VITE_API_URL 
+  const API_URL = import.meta.env.VITE_API_URL + "notes";
 
   // fetch API URL 
   useEffect(() => {
